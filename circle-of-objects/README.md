@@ -1,1 +1,0 @@
-# elliptic_collection
