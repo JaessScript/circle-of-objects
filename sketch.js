@@ -26,7 +26,7 @@ function setup() {
 
     x_myCircle2 = (3 * width) / 4;
     y_myCircle2 = height / 2;
-    myCircle2 = new CircleOfObjects(x_myCircle2, y_myCircle2, 150, 8, 50, -PI / 4, 0.02, elephant);
+    myCircle2 = new CircleOfObjects(x_myCircle2, y_myCircle2, 150, 8, 50, PI / 4, -0.02, elephant);
 }
 
 function draw() {
