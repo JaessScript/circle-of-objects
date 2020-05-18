@@ -12,7 +12,8 @@ let y_myCircle2;
 let myCircle2;
 
 function preload() {
-    elephant = loadImage('./images/indian_elephant.png');
+    // elephant = loadImage('./images/indian_elephant.png');
+    elephant = loadImage('./images/chinaflag3.png');
 }
 
 function setup() {
@@ -27,11 +28,19 @@ function setup() {
     x_myCircle2 = (3 * width) / 4;
     y_myCircle2 = height / 2;
     myCircle2 = new CircleOfObjects(x_myCircle2, y_myCircle2, 150, 8, 50, PI / 4, -0.02, elephant);
+    // drawFun();
+}
+
+function drawFun () {
+    background(bgcolour);
+    myCircle.show();
+    myCircle2.show();
 }
 
 function draw() {
-    background(bgcolour);
+    drawFun();
+    // background(bgcolour);
 
-    myCircle.show();
-    myCircle2.show();
+    // myCircle.show();
+    // myCircle2.show();
 }

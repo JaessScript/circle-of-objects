@@ -10,11 +10,14 @@ class SingleObject {
     show() {
         push();
         rectMode(CENTER);
-        translate(this.x, this.y);
-        // rotate(this.angle);
-        // rect(this.x, this.y, this.size_object, this.size_object);
         imageMode(CENTER);
-        scale(0.1, 0.1);
+        translate(this.x, this.y);
+        scale(0.03, 0.03);
+        // scale(0.1, 0.1);
+        console.log(`angle: ${this.angle}`);
+        let adjustedAngle = this.angle;
+        rotate(adjustedAngle);
+        // rect(this.x, this.y, this.size_object, this.size_object);
         // let theta = Math.atan(this.y / this.x);
         // rotate(theta);
         image(this.image, this.x, this.y);
